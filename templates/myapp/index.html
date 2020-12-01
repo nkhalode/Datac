@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+{{Nilesh}}
+
+    {% for posts in Nilesh %}
+        <h1>{{posts.title}}</h1><br>
+        <p>{{posts.desc}}</p>
+        {{posts.author}}
+
+    {% endfor%}
+
+{% endblock content %}
